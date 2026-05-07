@@ -94,7 +94,7 @@ but manual verification may still be required for:
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-av-setup-agent.git
+git clone https://github.com/NiharVaghela1995/ai-av-setup-agent.git
 cd ai-av-setup-agent
 ```
 
