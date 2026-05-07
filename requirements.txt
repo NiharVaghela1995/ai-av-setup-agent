@@ -1,0 +1,22 @@
+# AV Setup Agent — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Core notebook support
+nbformat>=5.9.0
+nbclient>=0.9.0
+nbconvert>=7.0.0
+
+# Jupyter (for running notebooks)
+jupyter>=1.0.0
+
+# HTTP requests (for fetching GitHub repos)
+requests>=2.31.0
+
+# YAML config support
+pyyaml>=6.0
+
+# Rich terminal output (optional, enhances display)
+rich>=13.0.0
+
+# System monitoring
+psutil>=5.9.0
