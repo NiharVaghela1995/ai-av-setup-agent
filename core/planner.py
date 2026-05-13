@@ -68,15 +68,11 @@ def check_unsupported(needed: dict, state: dict, os_info: dict,
 
     # CUDA required, no GPU
     if has_cuda and (not gpu or gpu == "none"):
-        raise UnsupportedConfig(
-            "Project requires CUDA/GPU but no NVIDIA GPU was detected.",
-            alternatives=[
-                "Use device='cpu' for learning/testing",
-                "Google Colab (free GPU): https://colab.research.google.com",
-                "Kaggle Notebooks: https://www.kaggle.com/code",
-                "Rent cloud GPU: Lambda Labs / RunPod / Vast.ai",
-            ]
-        )
+       print(
+        "\\n[WARNING] GPU/CUDA-related packages detected, "
+        "but no NVIDIA GPU was found."
+       )
+       print("Continuing in CPU-compatible mode where possible.\\n")
 
     # CUDA version too old
     if has_cuda and cuda_ver and cuda_ver not in ("not found",""):

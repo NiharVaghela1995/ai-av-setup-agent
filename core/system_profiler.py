@@ -86,8 +86,8 @@ def targeted_scan(needed: dict, os_info: dict) -> dict:
             pass
 
     # GPU / CUDA — only when relevant
-    needs_cuda = any(re.search(r"torch|cuda|open3d|carla|tensorrt",
-                               " ".join(needed.get("pip",[])).lower()))
+    needs_cuda = bool(re.search(r"cuda|tensorrt|cudnn|nvidia"," ".join(needed).lower()))
+    
     if needs_cuda or needed.get("rosdep"):
         out, _, rc = _run(
             "nvidia-smi --query-gpu=name,memory.total --format=csv,noheader 2>/dev/null"
