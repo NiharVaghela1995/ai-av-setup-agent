@@ -1,5 +1,9 @@
 # AI-Assisted AV/ML Environment Setup Agent
 
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![Domain](https://img.shields.io/badge/domain-Autonomous%20Driving-green)
+![Safety](https://img.shields.io/badge/default--mode-SAFE-orange)
+
 A safety-first orchestration assistant designed to reduce setup friction in
 complex Autonomous Driving and Machine Learning workflows.
 
