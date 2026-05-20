@@ -11,24 +11,11 @@ structured approval-based workflow.
 
 ## Motivation
 
-While learning Autonomous Driving workflows, a large portion of time was spent solving:
-
-- dependency conflicts
-- version mismatch issues
-- CUDA incompatibilities
-- notebook execution failures
-- ROS/CARLA setup complexity
-- repetitive environment debugging
-
-This project was created to reduce setup friction and help learners focus more on:
-
-- algorithms
-- systems understanding
-- experimentation
-- coding exercises
-- research workflows
-
-rather than spending excessive time on setup and compatibility problems.
+Built after spending 1.5 months debugging CUDA, mmcv, spconv, and 
+nuScenes dependency conflicts across 5 compute environments — local 
+Ubuntu laptop, Google Colab, Kaggle, RRZE FAU Compute Cloud, and 
+RunPod. The tool emerged from a real problem: every hour spent on 
+environment setup was an hour not spent on algorithms and research.
 
 ---
 
